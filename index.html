@@ -11,5 +11,18 @@
       </div>
     </header>
     <div id="app"></div>
+    <script>
+      /* Const keyword
+      means that no rebinding will happen
+      so guarantee that we cannont rebind
+      */
+     let a = 1;
+     a = 2; // Uncaught TypeError: Assignment to constant variable.
+     let o = {
+      name: 'b',
+     };
+     o.name = 'c'
+     console.log(o)
+    </script>
   </body>
 </html>
