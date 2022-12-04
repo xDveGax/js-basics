@@ -11,5 +11,19 @@
       </div>
     </header>
     <div id="app"></div>
+    <script>
+      {
+        var a = 123;
+      }
+      console.log(a)
+      // Special variable declaration.
+      {
+        let b = 456;
+      }
+      console.log(b)
+      // Hoisting doesn't work with let as the var work.
+      console.log(a1) // error
+      let a1 = 123;
+    </script>
   </body>
 </html>
